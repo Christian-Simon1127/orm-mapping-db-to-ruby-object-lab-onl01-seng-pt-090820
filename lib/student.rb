@@ -71,7 +71,7 @@ class Student
     FROM students
     WHERE grade = 10
     GROUP BY students.id
-    ORDER BY students.id ASC
+    ORDER BY students.id DESC
     LIMIT 1;
     SQL
     
