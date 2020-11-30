@@ -70,6 +70,7 @@ class Student
     SELECT * 
     FROM students
     WHERE grade = 10
+    GROUP BY students.id
     ORDER BY students.id ASC
     LIMIT 1;
     SQL
