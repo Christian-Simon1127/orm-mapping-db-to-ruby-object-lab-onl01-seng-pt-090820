@@ -72,7 +72,8 @@ class Student
     sql = <<-SQL
     SELECT students.name 
     FROM students
-    WHERE students.name = ?;
+    WHERE students.name = ?
+    LIMIT 1;
     SQL
     
     DB[:conn].execute(sql, name)
