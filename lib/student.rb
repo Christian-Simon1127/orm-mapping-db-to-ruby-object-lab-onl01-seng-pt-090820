@@ -70,7 +70,7 @@ class Student
     # return a new instance of the Student class
     
     sql = <<-SQL
-    SELECT students.name 
+    SELECT * 
     FROM students
     WHERE students.name = ?
     LIMIT 1;
